@@ -1,0 +1,16 @@
+{
+ "name": "TCGAville",
+ "description": "TCGAville",
+ "version": "0.1",
+ "app": {
+    "launch": {
+       "web_url": "http://tcga.github.com/"
+    }
+ },
+ "icons": {
+    "128": "TCGAville128.png"
+ },
+  "permissions": [
+	"https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/*"
+  ]
+}
