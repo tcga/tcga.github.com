@@ -1,0 +1,22 @@
+[
+  {
+  name:'RPPA',
+  url:'http://tcga.github.com/rppa.js',
+  tip:'Reverse Phase Protein Array explorer',
+  rdf:';-)',
+  notes:'inspired on Matlab tool described in http://www.ncbi.nlm.nih.gov/pubmed/19102773'
+  },
+  {
+  name:'CNViewer',
+  url:'http://tcga.github.com/cnviewer.js',
+  tip:'DNA Copy Number explorer',
+  rdf:';-)'
+  },
+  {
+  name:'TCGAville',
+  url:'http://tcga.github.com/TCGAville.js',
+  tip:'exploring articulation of multiple toolboxes for user driven assembly of analytical workflows',
+  icon:'tcga.github.com/TCGAville.png',
+  rdf:';-)'
+  }
+]
