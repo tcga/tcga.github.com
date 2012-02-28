@@ -2,6 +2,12 @@
     {
         "name": "CGR",
         "description": "Chaos Game Representation",
-        "url": "http://cgr.googlecode.com/hg/usm.js"
+        "url": "http://usm.github.com/usm.js",
+    	"rdf": [" for later :-) "]
+    },
+	{
+        "name": "jMat",
+        "description": "Computational Statistics module with m-code style",
+        "url": "http://usm.github.com/usm.js"
     }
 ]
