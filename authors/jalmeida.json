@@ -5,7 +5,8 @@
         "url": "http://usm.github.com/usm.js",
     	"rdf": [" JSON-LOD? "]
     },
-	{
+	
+    {
         "name": "jMat",
         "description": "Computational Statistics module with m-code style",
         "url": "http://jmat.googlecode.com/git/jmat.js"
