@@ -3,11 +3,11 @@
         "name": "CGR",
         "description": "Chaos Game Representation",
         "url": "http://usm.github.com/usm.js",
-    	"rdf": [" for later :-) "]
+    	"rdf": [" JSON-LOD? "]
     },
 	{
         "name": "jMat",
         "description": "Computational Statistics module with m-code style",
-        "url": "jmat.googlecode.com/git/jmat.js"
+        "url": "http://jmat.googlecode.com/git/jmat.js"
     }
 ]
