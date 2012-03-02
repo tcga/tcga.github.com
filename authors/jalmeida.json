@@ -1,14 +1,15 @@
-[
+{
+"http://usm.github.com/usm.js":
     {
         "name": "CGR",
         "description": "Chaos Game Representation",
         "url": "http://usm.github.com/usm.js",
     	"rdf": [" JSON-LOD? "]
     },
-	
+"http://jmat.googlecode.com/git/jmat.js":	
     {
         "name": "jMat",
         "description": "Computational Statistics module with m-code style",
         "url": "http://jmat.googlecode.com/git/jmat.js"
     }
-]
+}
