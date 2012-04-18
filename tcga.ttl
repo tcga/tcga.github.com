@@ -14,60 +14,60 @@
     vann:preferredNamespaceUri "http://tcga.github.com/#";
     vann:preferredNamespacePrefix "tcga".
 
-tcga:DiseaseStudy a rdfs:Class, owl:Class, rdf:Property;
+tcga:disease-study a rdfs:Class, owl:Class, rdf:Property;
     rdfs:isDefinedBy <http://tcga.github.com/#>;
     rdfs:label "Disease Study";
     rdfs:comment "A disease study is the sum of results from all experiments for a specific cancer type (or tumor type) that TCGA is tasked to study. Within the project, a disease is referred to by its abbreviation. For example, Glioblastoma multiforme is represented by the abbreviation GBM.";
     rdfs:subClassOf tcga:Entity ;
-    rdfs:domain tcga:File;
-    rdfs:range tcga:DiseaseStudy.
+    rdfs:domain tcga:file;
+    rdfs:range tcga:disease-study.
 
-tcga:CenterType a rdfs:Class, owl:Class, rdf:Property;
+tcga:center-type a rdfs:Class, owl:Class, rdf:Property;
     rdfs:isDefinedBy <http://tcga.github.com/#>;
-    rdfs:label "Center Type";
+    rdfs:label "center-domain Type";
     rdfs:comment "A center can be either a single institution/research center, or a collection of institutions and research centers that perform the same function within TCGA. There are five center types that exist within this project: BCR, GCC, GSC, GDAC, DCC. For a list of all individual centers and their center types, see the Code Tables Report.";
     rdfs:subClassOf tcga:Entity ;
-    rdfs:domain tcga:File;
-    rdfs:range tcga:CenterType.
+    rdfs:domain tcga:file;
+    rdfs:range tcga:center-type.
 
-tcga:Center a rdfs:Class, owl:Class, rdf:Property;
+tcga:center-domain a rdfs:Class, owl:Class, rdf:Property;
     rdfs:isDefinedBy <http://tcga.github.com/#>;
-    rdfs:label "Center";
+    rdfs:label "center-domain";
     rdfs:comment "The typically the domain of a particular TCGA center. A center can be either a single institution/research center, or a collection of institutions and research centers that perform the same function within TCGA. There are five center types that exist within this project: BCR, GCC, GSC, GDAC, DCC. For a list of all individual centers and their center types, see the Code Tables Report.";
     rdfs:subClassOf tcga:Entity ;
-    rdfs:domain tcga:File;
-    rdfs:range tcga:Center.
+    rdfs:domain tcga:file;
+    rdfs:range tcga:center-domain.
 
-tcga:Platform a rdfs:Class, owl:Class, rdf:Property;
+tcga:platform a rdfs:Class, owl:Class, rdf:Property;
     rdfs:isDefinedBy <http://tcga.github.com/#>;
     rdfs:label "Platform";
     rdfs:comment "A platform (within the scope of TCGA) is a vendor-specific technology for assaying or sequencing that could possibly be customized by a GSC or GCC.";
     rdfs:subClassOf tcga:Entity ;
-    rdfs:domain tcga:File;
-    rdfs:range tcga:Platform.
+    rdfs:domain tcga:file;
+    rdfs:range tcga:platform.
 
-tcga:DataType a rdfs:Class, owl:Class, rdf:Property;
+tcga:data-type a rdfs:Class, owl:Class, rdf:Property;
     rdfs:isDefinedBy <http://tcga.github.com/#>;
     rdfs:label "Data Type";
     rdfs:comment "A data type is a label to categorize the many forms of platform data within the TCGA Network. Examples of data type include DNA Methylation, Copy Number Results and SNP.";
     rdfs:subClassOf tcga:Entity ;
-    rdfs:domain tcga:File;
-    rdfs:range tcga:DataType.
+    rdfs:domain tcga:file;
+    rdfs:range tcga:data-type.
 
-tcga:Archive a rdfs:Class, owl:Class, rdf:Property;
+tcga:archive a rdfs:Class, owl:Class, rdf:Property;
     rdfs:isDefinedBy <http://tcga.github.com/#>;
     rdfs:label "Archive";
     rdfs:comment "An archive is a file that contains a collection of files and their metadata. In the context of TCGA, archives are the primary unit by which information is bundled: they are created and submitted to the DCC by data submission centers and made available for download via the TCGA Data Portal. Files are archived using tar and compressed with gzip and so they have the file extension .tar.gz. There are three types of TCGA archives: Data Archives, MAGE-TAB Archives and Auxiliary Archives.";
     rdfs:subClassOf tcga:Entity ;
-    rdfs:domain tcga:File;
-    rdfs:range tcga:Archive.
+    rdfs:domain tcga:file;
+    rdfs:range tcga:archive.
 
-tcga:File a rdfs:Class, owl:Class, rdf:Property;
+tcga:file a rdfs:Class, owl:Class, rdf:Property;
     rdfs:isDefinedBy <http://tcga.github.com/#>;
     rdfs:label "File";
     rdfs:comment "Files represent the core data containers of the TCGA, and may be text or images.";
     rdfs:subClassOf tcga:Entity ;
-    rdfs:range tcga:File.
+    rdfs:range tcga:file.
 
 tcga:Entity a rdfs:Class, owl:Class;
     rdfs:isDefinedBy <http://tcga.github.com/#>;
@@ -96,23 +96,23 @@ tcga:type a rdf:Property, owl:DeprecatedProperty;
 tcga:ETag a rdf:Property;
     rdfs:isDefinedBy <http://tcga.github.com/#>;
     rdfs:label "ETag";
-    rdfs:comment "HTTP ETag associated with a tcga:File";
+    rdfs:comment "HTTP ETag associated with a tcga:file";
     rdfs:range rdfs:Literal;
-    rdfs:domain tcga:File .
+    rdfs:domain tcga:file .
 
 tcga:Content-Type a rdf:Property;
     rdfs:isDefinedBy <http://tcga.github.com/#>;
     rdfs:label "Content-Type";
-    rdfs:comment "HTTP Content-Type associated with a tcga:File";
+    rdfs:comment "HTTP Content-Type associated with a tcga:file";
     rdfs:range rdfs:Literal;
-    rdfs:domain tcga:File .
+    rdfs:domain tcga:file .
 
 tcga:Last-Modified a rdf:Property;
     rdfs:isDefinedBy <http://tcga.github.com/#>;
     rdfs:label "Last-Modified";
-    rdfs:comment "HTTP Last-Modified associated with a tcga:File";
+    rdfs:comment "HTTP Last-Modified associated with a tcga:file";
     rdfs:range rdfs:Literal;
-    rdfs:domain tcga:File .
+    rdfs:domain tcga:file .
 
 tcga:cameFrom a rdf:Property;
     rdfs:isDefinedBy <http://tcga.github.com/#>;
@@ -122,13 +122,13 @@ tcga:cameFrom a rdf:Property;
 tcga:level a rdf:Property;
     rdfs:isDefinedBy <http://tcga.github.com/#>;
     rdfs:label "Level";
-    rdfs:comment "The Data Level of a tcga:File. Data level is a method of data categorization used within the TCGA network to facilitate researchers in communicating and locating their data of interest. Data levels are assigned for each data type, platform and center. There are four data levels: Level 1 (for Raw Data), Level 2 (for Processed Data), Level 3 (for Segmented or Interpreted Data) and Level 4 (for Region of Interest Data).";
+    rdfs:comment "The Data Level of a tcga:file. Data level is a method of data categorization used within the TCGA network to facilitate researchers in communicating and locating their data of interest. Data levels are assigned for each data type, platform and center. There are four data levels: Level 1 (for Raw Data), Level 2 (for Processed Data), Level 3 (for Segmented or Interpreted Data) and Level 4 (for Region of Interest Data).";
     rdfs:range rdfs:Literal;
-    rdfs:domain tcga:File .
+    rdfs:domain tcga:file .
 
 tcga:previousVersion a rdf:Property;
     rdfs:isDefinedBy <http://tcga.github.com/#>;
     rdfs:label "Previous Version";
-    rdfs:comment "The previous version of a tcga:File";
-    rdfs:range tcga:File;
-    rdfs:domain tcga:File .
+    rdfs:comment "The previous version of a tcga:file";
+    rdfs:range tcga:file;
+    rdfs:domain tcga:file .
