@@ -107,6 +107,13 @@ tcga:Content-Type a rdf:Property;
     rdfs:range rdfs:Literal;
     rdfs:domain tcga:File .
 
+tcga:Last-Modified a rdf:Property;
+    rdfs:isDefinedBy <http://tcga.github.com/#>;
+    rdfs:label "Last-Modified";
+    rdfs:comment "HTTP Last-Modified associated with a tcga:File";
+    rdfs:range rdfs:Literal;
+    rdfs:domain tcga:File .
+
 tcga:cameFrom a rdf:Property;
     rdfs:isDefinedBy <http://tcga.github.com/#>;
     rdfs:label "came from";
