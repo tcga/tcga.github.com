@@ -122,7 +122,7 @@ tcga:cameFrom a rdf:Property;
 tcga:level a rdf:Property;
     rdfs:isDefinedBy <http://tcga.github.com/#>;
     rdfs:label "Level";
-    rdfs:comment "The Data Level of a tcga:File. ";
+    rdfs:comment "The Data Level of a tcga:File. Data level is a method of data categorization used within the TCGA network to facilitate researchers in communicating and locating their data of interest. Data levels are assigned for each data type, platform and center. There are four data levels: Level 1 (for Raw Data), Level 2 (for Processed Data), Level 3 (for Segmented or Interpreted Data) and Level 4 (for Region of Interest Data).";
     rdfs:range rdfs:Literal;
     rdfs:domain tcga:File .
 
