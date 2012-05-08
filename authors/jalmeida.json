@@ -1,4 +1,4 @@
-{
+manifest({
 "http://usm.github.com/usm.js":
     {
         "name": "CGR",
@@ -12,4 +12,4 @@
         "description": "Computational Statistics module with m-code style",
         "url": "http://jmat.googlecode.com/git/jmat.js"
     }
-}
+})
