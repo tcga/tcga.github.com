@@ -10,7 +10,15 @@ var detect = function(base, if_installed, if_not_installed) {
 	s.src = url;
     document.body.appendChild(s);
 }
-detect(url, function() {document.location.href=url},function(){console.log('app not installed')});
+detect(
+	url,
+	function() {
+	document.location.href=url
+	},
+	function(){
+		console.log('app not installed')
+	}
+);
 
 </script>
 You need to have the <a href="https://chrome.google.com/webstore/detail/ajjkhhldnekpjjfckpkpodgeddndljnl">TCGA Chrome app</a> installed first!
