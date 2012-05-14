@@ -2,8 +2,17 @@
 <body>
 <script>
 url = 'chrome-extension://ajjkhhldnekpjjfckpkpodgeddndljnl/main.html'+document.location.search+document.location.hash;
-document.location.href=url;
+//find out if app is installed
+var detect = function(base, if_installed, if_not_installed) {
+    var s = document.createElement('script');
+    s.onerror = if_not_installed;
+    s.onload = if_installed;
+	s.src = url;
+    document.body.appendChild(s);
+}
+detect(url, function() {document.location.href=url},function(){console.log('app not installed')});
+
 </script>
-Make sure you have the <a href="https://chrome.google.com/webstore/detail/ajjkhhldnekpjjfckpkpodgeddndljnl">TCGA app</a> installed
+You need to have the <a href="https://chrome.google.com/webstore/detail/ajjkhhldnekpjjfckpkpodgeddndljnl">TCGA Chrome app</a> installed first!
 </body>
 </html>
