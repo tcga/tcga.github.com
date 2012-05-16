@@ -1,26 +1,11 @@
 <html>
 <body>
-<script>
-url = 'chrome-extension://ajjkhhldnekpjjfckpkpodgeddndljnl/main.html'+document.location.search+document.location.hash;
-//find out if app is installed
-var detect = function(base, if_installed, if_not_installed) {
-    var s = document.createElement('script');
-    s.onerror = if_not_installed;
-    s.onload = if_installed;
-	s.src = url;
-    document.body.appendChild(s);
-}
-detect(
-	url,
-	function() {
-	document.location.href=url
-	},
-	function(){
-		console.log('app not installed')
-	}
-);
+<p>[<a href="https://github.com/tcga/tcga.github.com">source</a>]</p>
+TCGA :-)
+<script src=tcga.js></script>
+<script src=tcgaVille.js></script>
 
-</script>
-You need to have the <a href="https://chrome.google.com/webstore/detail/ajjkhhldnekpjjfckpkpodgeddndljnl">TCGA Chrome app</a> installed first!
+<a href='https://accounts.google.com/o/oauth2/auth?state=/profile&redirect_uri=http://tcga.github.com&response_type=code&client_id=219713047770-utd7i88duqjoqae5o6jabngfvj0rvp6u.apps.googleusercontent.com&approval_prompt=force&scope=https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/fusiontables'>Login</a>
+
 </body>
 </html>
