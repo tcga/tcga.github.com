@@ -1,26 +1,22 @@
-<html>
-<body>
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>TCGA Toolbox</title>
+<h1>TCGA Toolbox</h1>
+<p>You need to have <a href="https://chrome.google.com/webstore/detail/ajjkhhldnekpjjfckpkpodgeddndljnl">TCGA Toolbox</a> for <a href="https://www.google.com/chrome">Google Chrome</a> installed.</p>
 <script>
-url = 'chrome-extension://ajjkhhldnekpjjfckpkpodgeddndljnl/main.html'+document.location.search+document.location.hash;
-//find out if app is installed
-var detect = function(base, if_installed, if_not_installed) {
-    var s = document.createElement('script');
-    s.onerror = if_not_installed;
-    s.onload = if_installed;
-	s.src = url;
-    document.body.appendChild(s);
-}
-detect(
-	url,
-	function() {
-	document.location.href=url
-	},
-	function(){
-		console.log('app not installed')
-	}
-);
-
+    var url, head, script;
+    url = "chrome-extension://ajjkhhldnekpjjfckpkpodgeddndljnl/main.html";
+    url = url + document.location.search + document.location.hash;
+    head = document.head;
+    script = document.createElement("script");
+    script.src = url;
+    script.onload = function () {
+     // App is installed, redirect.
+        document.location.href = url;
+        head.removeChild(script);
+    };
+    script.onerror = function () {
+        head.removeChild(script);
+    };
+    document.head.appendChild(script);
 </script>
-You need to have the <a href="https://chrome.google.com/webstore/detail/ajjkhhldnekpjjfckpkpodgeddndljnl">TCGA Chrome app</a> installed first!
-</body>
-</html>
