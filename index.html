@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>TCGA Toolbox</title>
+<h1>TCGA Toolbox</h1>
+<p>You need to have <a href="https://chrome.google.com/webstore/detail/ajjkhhldnekpjjfckpkpodgeddndljnl">TCGA Toolbox</a> for <a href="https://www.google.com/chrome">Google Chrome</a> installed.</p>
+<script>
+    var url, head, script;
+    url = "chrome-extension://ajjkhhldnekpjjfckpkpodgeddndljnl/main.html";
+    url = url + document.location.search + document.location.hash;
+    head = document.head;
+    script = document.createElement("script");
+    script.src = url;
+    script.onload = function () {
+     // App is installed, redirect.
+        document.location.href = url;
+        head.removeChild(script);
+    };
+    script.onerror = function () {
+        head.removeChild(script);
+    };
+    document.head.appendChild(script);
+</script>
