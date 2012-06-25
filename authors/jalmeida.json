@@ -12,6 +12,7 @@ manifest({
         "description": "Computational Statistics module with m-code style",
         "url": "http://jmat.googlecode.com/git/jmat.js"
     },
+"https://raw.github.com/antoniogarrote/rdfstore-js/master/frontend/js/rdf_store_min.js":
     {
         "name": "Antonio Garrote's rdfstore",
         "description": "Antonio Garrote's rdfstore.js library",
