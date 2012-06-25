@@ -17,5 +17,11 @@ manifest({
         "name": "Antonio Garrote's rdfstore",
         "description": "Antonio Garrote's rdfstore.js library",
         "url": "https://raw.github.com/antoniogarrote/rdfstore-js/master/frontend/js/rdf_store_min.js"
+    },
+    "http://tcga.github.com/?module=https://tcgapps.googlecode.com/git/catalog.js":
+    {
+        "name": "Catalog (SPARQL endpoint)",
+        "description": "Antonio Garrote's rdfstore.js library",
+        "url": "http://tcga.github.com/?module=https://tcgapps.googlecode.com/git/catalog.js"
     }
 })
