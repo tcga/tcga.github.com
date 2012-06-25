@@ -20,8 +20,8 @@ manifest({
     },
     "http://tcga.github.com/?module=https://tcgapps.googlecode.com/git/catalog.js":
     {
-        "name": "Catalog (SPARQL endpoint)",
-        "description": "Antonio Garrote's rdfstore.js library",
+        "name": "Catalog",
+        "description": "SPARQL endpoint for file Catalog",
         "url": "http://tcga.github.com/?module=https://tcgapps.googlecode.com/git/catalog.js"
     }
 })
