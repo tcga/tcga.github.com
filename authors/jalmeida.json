@@ -3,14 +3,14 @@ manifest({
     {
         "name": "CGR",
         "description": "Chaos Game Representation",
-        "url": "http://usm.github.com/usm.js",
-    	"rdf": [" JSON-LOD? "]
+        "url": "https://raw.github.com/usm/usm.github.com/master/usm.js",
+        "rdf": [" JSON-LOD? "]
     },
-"http://jmat.googlecode.com/git/jmat.js":	
+"http://jmat.googlecode.com/git/jmat.js":
     {
         "name": "jMat",
         "description": "Computational Statistics module with m-code style",
-        "url": "http://jmat.googlecode.com/git/jmat.js"
+        "url": "https://jmat.googlecode.com/git/jmat.js"
     },
 "https://raw.github.com/antoniogarrote/rdfstore-js/master/frontend/js/rdf_store_min.js":
     {
