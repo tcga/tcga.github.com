@@ -3,10 +3,6 @@
 @prefix tcga: <http://purl.org/tcga/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://purl.org/tcga/core#> a owl:Ontology;
-    rdfs:label "TCGA Toolbox Vocabulary";
-    rdfs:comment "This vocabulary describes the contents of the TCGA open access http site." .
-
 tcga:DiseaseStudy a rdfs:Class;
     rdfs:isDefinedBy <http://purl.org/tcga/core#>;
     rdfs:label "Disease Study";
