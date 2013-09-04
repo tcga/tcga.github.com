@@ -1,10 +1,10 @@
 [{
-    author: "Alexander Grüneberg",
-    url: "http://tcga.github.io/authors/agrueneberg.json"
+    "author": "Alexander Grüneberg",
+    "url": "http://tcga.github.io/authors/agrueneberg.json"
 }, {
-    author: "David Robbins",
-    url: "http://tcga.github.io/authors/drobbins.json"
+    "author": "David Robbins",
+    "url": "http://tcga.github.io/authors/drobbins.json"
 }, {
-    author: "Jonas Almeida",
-    url: "http://tcga.github.io/authors/jalmeida.json"
+    "author": "Jonas Almeida",
+    "url": "http://tcga.github.io/authors/jalmeida.json"
 }]
