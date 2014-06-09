@@ -17,6 +17,7 @@ manifest([
     {
         "name": "Databases",
         "description": "Activate third-party databases for use with the TCGA Toolbox.",
-        "url": "https://agrueneberg.github.io/TCGA.databases/databases.js"
+        "url": "https://agrueneberg.github.io/TCGA.databases/databases.js",
+        "target": "app"
     }
 ]);
