@@ -4,6 +4,7 @@ manifest({
         "name": "CGR",
         "description": "Chaos Game Representation",
         "url": "https://raw.github.com/usm/usm.github.com/master/usm.js",
+        "target": "app",
         "rdf": [" JSON-LOD? "]
     },
 "http://jmat.googlecode.com/git/jmat.js":
@@ -16,7 +17,8 @@ manifest({
     {
         "name": "Antonio Garrote's rdfstore",
         "description": "Antonio Garrote's rdfstore.js library",
-        "url": "https://raw.github.com/antoniogarrote/rdfstore-js/master/frontend/js/rdf_store_min.js"
+        "url": "https://raw.github.com/antoniogarrote/rdfstore-js/master/frontend/js/rdf_store_min.js",
+        "target": "app"
     },
 "https://tcgapps.googlecode.com/git/catalog.js":
     {
