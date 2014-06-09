@@ -1,12 +1,12 @@
 [{
     "author": "Alexander Grüneberg",
-    "url": "https://raw.github.com/tcga/tcga.github.com/master/authors/agrueneberg.js"
+    "url": "https://tcga.github.io/authors/agrueneberg.js"
 }, {
     "author": "David Robbins",
-    "url": "https://raw.github.com/tcga/tcga.github.com/master/authors/drobbins.js"
+    "url": "https://tcga.github.io/authors/drobbins.js"
 }, {
     "author": "Jonas Almeida",
-    "url": "https://raw.github.com/tcga/tcga.github.com/master/authors/jalmeida.js"
+    "url": "https://tcga.github.io/authors/jalmeida.js"
 }, {
     "author": "Sean Wilkinson",
     "url": "https://qmachine.googlecode.com/git/etc/tcga-web-toolbox/manifest.js"
