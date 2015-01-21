@@ -1,20 +1,17 @@
 manifest({
-  "https://raw.github.com/drobbins/TCGA.query/master/tcgaquery.js" : {
+  "http://drobbins.github.io/TCGA.query/tcgaquery.js" : {
     "name" : "TCGA Query",
     "description" : "SPARQL Interface for the TCGA Roadmap",
-    "url" : "https://raw.github.com/drobbins/TCGA.query/master/tcgaquery.js",
-    "target" : "app"
+    "url" : "http://drobbins.github.io/TCGA.query/tcgaquery.js"
   },
-  "https://raw.github.com/drobbins/TCGA.ql/master/tcgaql.js" : {
+  "https://rawgithub.com/drobbins/TCGA.ql/master/tcgaql.js" : {
     "name" : "TCGA Query Language",
     "description" : "A simple query builder for the TCGA Roadmap",
-    "url" : "https://raw.github.com/drobbins/TCGA.ql/master/tcgaql.js",
-    "target" : "app"
+    "url" : "https://rawgithub.com/drobbins/TCGA.ql/master/tcgaql.js"
   },
-  "https://raw.github.com/drobbins/TCGA.qlui/master/tcgaqlui.js" : {
+  "https://rawgithub.com/drobbins/TCGA.qlui/master/tcgaqlui.js" : {
     "name" : "TCGA Query Language UI",
     "description" : "GUI for TCGA.ql",
-    "url" : "https://raw.github.com/drobbins/TCGA.qlui/master/tcgaqlui.js",
-    "target" : "app"
+    "url" : "https://rawgithub.com/drobbins/TCGA.qlui/master/tcgaqlui.js"
   }
 });
